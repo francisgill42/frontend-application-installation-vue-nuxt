@@ -1,0 +1,27 @@
+for frontend application install
+
+
+Nodejs Installation 
+-------------------
+
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+
+sudo apt install npm	 
+
+
+
+edting conf file
+-----------------
+cd /etc/nginx/site-available
+change root to /var/www/html => /var/www/html/folder_name/dist/
+ctrl x => y => enter
+sudo service nginx restart
+
+cd into project foler
+---------------------
+git clone from repo
+npm i
+npm run generate(for static version)/npm run build
+check your project
